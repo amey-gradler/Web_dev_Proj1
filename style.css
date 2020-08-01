@@ -1,0 +1,78 @@
+.card-deck{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+h5{
+    color: red;
+}
+
+h6{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+#margin{
+    margin-left: 200px;
+}
+
+
+.smell{
+    background-image: linear-gradient(to bottom right, blue, white);
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.color{
+    color: black;
+}
+/* 
+.card{
+    width: 20vw;
+    height: 28vh;
+} */
+
+ @media(max-width:500px){
+    
+    #margin{
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-device-width:1300px) and (min-device-width:1000px){
+    
+    #margin{
+        margin-left: 100px;
+    }
+    .margin{
+        font-size: 0.5rem;
+    }
+    
+}
+
+
+@media only screen and (max-device-width:980px) and (min-device-width:540px){
+    
+    #margin{
+        margin-left: 0px;
+    }
+    .card-deck{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
