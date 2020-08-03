@@ -134,10 +134,7 @@ footer h5{
     
 }
 
-.news{
-    background-image: linear-gradient(to bottom right, blue, white);
 
-}
 .card a:hover img{
     transform: translateY(-10px);
 }
