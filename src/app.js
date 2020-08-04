@@ -2,11 +2,11 @@ const express = require('express')
 const news = require('./utils/news')
 const path = require('path')
 const hbs=require('hbs')
-
+const live=require('./utils/live')
 const app= express()
 
-homepage=path.join(__dirname,'../public')
-viewpage=path.join(__dirname,'../templates/views')
+const homepage=path.join(__dirname,'../public')
+const viewpage=path.join(__dirname,'../templates/views')
 
 
 const port= process.nextTick.PORT || 3000;
@@ -37,6 +37,17 @@ app.get('/news', (req,res)=>{
     })
 })
 
+app.get('/live',(req,res)=>{
+    live((error,body)=>{
+        if(error){
+            return res.send({
+                Error:error
+            })
+        }
+        const score=body.matches
+        res.send(score)
+    })
+})
 
 
 app.listen(port, ()=>{

@@ -7,7 +7,7 @@ const news = (callback)=>{
         if(error){
             
             // console.log("Unable to connect to servies");
-            callback("Unable to connec to Services",undefined)
+            callback("Unable to connect to Services",undefined)
         }
         else{
             callback(undefined,body);
