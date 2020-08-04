@@ -1,10 +1,24 @@
 const express = require('express')
 const news = require('./utils/news')
+const path = require('path')
+const hbs=require('hbs')
+
 const app= express()
+
+homepage=path.join(__dirname,'../public')
+viewpage=path.join(__dirname,'../templates/views')
+
 
 const port= process.nextTick.PORT || 3000;
 
+app.use(express.static(homepage))
+app.set('view engine','hbs')
+app.set('views',viewpage)
 
+
+app.get('',(req,res)=>{
+    res.render('index')
+})
 
 app.get('/news', (req,res)=>{
     news((error,body)=>{
@@ -16,7 +30,10 @@ app.get('/news', (req,res)=>{
 
         const news = body.articles
         
-        res.send(news)
+        res.send(
+            news
+            
+        )
     })
 })
 
