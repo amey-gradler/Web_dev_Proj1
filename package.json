@@ -18,6 +18,7 @@
   "homepage": "https://github.com/amey-gradler/Web_dev_Proj1#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "hbs": "^4.1.1",
     "request": "^2.88.2"
   }
 }
