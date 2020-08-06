@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/index.js"></script>
+    <title>Criczest</title>
+    <style>
+        p {
+            font-size: 120%;
+        }
+
+        .blog {
+            margin: 3%
+        }
+
+        .blogimage {
+            width: 100%;
+
+        }
+
+        .blogtext {
+            margin-top: 1%;
+        }
+
+        .blogbox {
+            border-style: solid;
+            border-color: grey;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .previous {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .next {
+            background-color: black;
+            color: white;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+
+        .navigate {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .nav1 {
+            position: relative;
+            margin-top: 7%;
+            margin-bottom: 15%;
+        }
+
+        .fa-facebook {
+            color: #3b5998;
+
+        }
+
+        .fa-twitter {
+            color: #00aced;
+        }
+
+        .fa-instagram {
+            color: #517fa4;
+        }
+
+        .fa-youtube {
+            color: #bb0000;
+        }
+
+        .fa-facebook:hover,
+        .fa-twitter:hover,
+        .fa-instagram:hover,
+        .fa-youtube:hover {
+            color: grey;
+        }
+
+        .fa-facebook,
+        .fa-twitter,
+        .fa-instagram,
+        .fa-youtube,
+        .fa-globe,
+        .fa-android,
+        .fa-globe,
+        .fa-sticky-note,
+        .fa-phone {
+            font-size: 1.8 rem;
+            margin: 2px;
+        }
+
+        footer {
+            background-color: #3f3f3f;
+            color: #d5d5d5;
+            padding-top: 2rem;
+            padding-bottom: 2px;
+        }
+
+
+
+        footer li {
+            list-style: none;
+            padding: 5px;
+
+
+        }
+
+        footer a {
+            color: #d5d5d5;
+            margin: 3px auto;
+            font-size: 18px;
+        }
+
+        footer a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer h5 {
+            color: #d5d5d5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Criczest(Logo)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Matches
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Recent Results</a>
+                        <a class="dropdown-item" href="#">Upcoming fixtures</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Upcoming Tours and Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">ind tour of aus</a>
+                        <a class="dropdown-item" href="#">eng tour of england</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blogs/Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Write for Us</a>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--navbar ends-->
+    <div class="blog">
+        <!--<div class="blogbox">
+            <h3>1.Dhoni and Kohli Practicing For WI Tour</h3>
+            <img class="blogimage" src="download.jpg" alt="">
+            <p class="blogtext">India's batting in Test cricket revolves around
+                Virat Kohli and Cheteshwar Pujara. They
+                have
+                been the pillars
+                of the line-up for almost a decade now and the number three batsman gives an insight, while speaking to
+                Harsha Bhogle in Cricbuzz in Conversation, as to what makes them click as a pair.
+
+                There cannot be two different batsmen than Kohli and Pujara. They are like chalk and cheese. One likes
+                to
+                dominate the opposition while the other grinds them out but both are necessary for a team's cause. The
+                duo
+                have accumulated 2894 runs together with seven hundred and 14 fifty-plus partnerships and average 47.44
+                in
+                62 innings.
+
+                Pujara gives a glimpse into what it's like to bat with Kohli, "As soon as he comes he will ask what are
+                they
+                (the opposition) trying to do, how the ball is swinging. If it's a left-arm seamer, what are the angles
+                he
+                is using, whether he's trying to bowl an inswinger or an away swinger. There's a lot of communication."
+
+                The duo were earmarked as the future Dravid and Tendulkar of Indian cricket when they started off and
+                though
+                they have carved their own path, when it comes to batting together the traits are very similar to that
+                of
+                their predecessors. The opposition generally used to target Tendulkar as he was the bigger scalp and
+                Dravid
+                used to fly under the radar, it is a similar case with Kohli and Pujara.</p>
+            <p class="blogtext">Author:</p>
+        </div>
+
+
+        <div class="blogbox">
+            <h3>2.England: Three quicks or four? It's all down to Stokes' fitness</h3>
+            <img class="blogimage" src="Capture.PNG" alt="">
+            <p class="blogtext">Joe Root confirmed that England have yet to decide on the balance of their side for the
+                first Test against Pakistan, which begins on Wednesday (August 5), and will only do so once they have a
+                clearer idea of whether Ben Stokes will be fit enough to bowl.
+
+                The-all rounder tweaked a quad muscle in the second Test against the West Indies last month and played
+                in
+                the deciding match as a batsman only. Stokes bowled two overs in the middle and then in the nets to Zak
+                Crawley during training at Emirates Old Trafford on Monday (August 3) without any issues but wet weather
+                in
+                Manchester on Tuesday meant he was unable to bowl outside. As a result, England have not yet been able
+                to
+                adequately assess his fitness.
+
+                "Luckily, we're in a position where we can name the same squads in the same squad of 14 as the last
+                game,
+                but we still need to know a little bit more about where Ben's at," Root said. "Unfortunately because of
+                the
+                weather today he wasn't able to bowl outside. So we will wait on that throughout the night and make a
+                decision in the morning. With that squad of players, we've got a number of different options, we've got
+                everything to cover the conditions and the pitch, and whatever that throws at us, we feel like we'll
+                have an
+                answer for it.".</p>
+            <p class="blogtext">Author:</p>
+        </div>-->
+
+
+        <div class="blogbox">
+            <h3>3.Cricket Australia postpone T20I series against West Indies</h3>
+            <img class="blogimage" src="Capture2.PNG" alt="">
+            <p class="blogtext">Cricket Australia has indefinitely postponed the proposed three-match T20I series
+                against
+                West Indies scheduled for the first week of October. The decision was communicated on Tuesday morning
+                following discussions between the two boards.
+
+                The three-match series, with games at Townsville, Cairns and the Gold Coast on October 4, 6 and 9
+                respectively, was to serve as a tune-up before the T20 World Cup. But with the ICC rescheduling that
+                marquee
+                event to 2021 because of the Coronavirus pandemic, there was little to gain from a three-match series
+                which
+                brings with it significant logistic overheads.
+
+                The cancellation of the West Indies T20Is delays the international debut of the Bill Pippen Oval in Gold
+                Coast. The Cazaly's Stadium in Cairns too will have to wait a while before getting to host an
+                international
+                game. It last played host to a Australia vs Sri Lanka Test, 16 years ago.
+
+                Incidentally, India have been pencilled in to play three T20Is - October 11, 14 and 17 - as well, an
+                assignment that is now unlikely to go ahead following BCCI's reworked IPL schedule in the
+                September-November
+                window. It is highly likely that the T20Is against India might be accommodated following the Test and
+                ODI
+                leg of their visit in December-January."Luckily, we're in a position where we can name the same squads
+                in the same squad of 14 as the last
+                game,
+                but we still need to know a little bit more about where Ben's at," Root said. "Unfortunately because of
+                the
+                weather today he wasn't able to bowl outside. So we will wait on that throughout the night and make a
+                decision in the morning. With that squad of players</p>
+            <p class="blogtext">Author:</p>
+        </div>
+    </div>
+    <div class="nav1">
+        <div class="navigate">
+            <a href="#" class="previous round">&#8249;</a>
+            <a href="#" class="next round">&#8250;</a>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="download.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Capture.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Capture2.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid ">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="" alt="LOGO">
+                    <br><br>
+                    <h5>
+                        Mobile Site and apps
+                    </h5>
+
+                    <ul class="sites">
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="">www.oursitename.com</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-android"></i>
+                            <a href="">OurAppName</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-apple"></i>
+                            <a href="">OurAppName</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h5>Follow Us On</h5>
+
+                    <ul class="social">
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                            <a href="">
+                                facebook
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                            <a href="">
+                                twitter
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <a href="">
+                                instagram
+                            </a>
+
+                        </li>
+                        <li>
+                            <i class="fab fa-youtube"></i>
+                            <a href="">
+                                youtube
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Community</h5>
+                    <ul>
+                        <li><i class="far fa-sticky-note"></i><a href="">Write for Us</a></li>
+                        <li><i class="fas fa-phone"></i><a href="">Contact Us</a></li>
+                        <li><a href="">Give a feedback!</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12">
+                    <p>&copy; 2020 OurSitename.com . All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+
+</html>
