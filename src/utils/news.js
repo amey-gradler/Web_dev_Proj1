@@ -1,7 +1,7 @@
 const request = require('request')
 
 const news = (callback)=>{
-    const url = "https://newsapi.org/v2/top-headlines?category=sports&apiKey=b11aaab7b6284d2a91d39f7d61a8d335&q=cricket"
+    const url = "https://newsapi.org/v2/top-headlines?category=sports&apiKey=b11aaab7b6284d2a91d39f7d61a8d335&q=cricket&sortBy=popularity&size=6"
 
     request({url,json:true}, (error,response,body)=>{
         if(error){
